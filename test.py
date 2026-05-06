@@ -14,12 +14,15 @@ from models.hash_model import HashModel
 from utils.retrieval import evaluate_retrieval, save_pr_curve_csv
 
 
+"""检索评估入口：输出 mAP、P@K/R@K，并可导出 PR 曲线和 t-SNE。"""
+
+
 def parse_args():
-    parser = argparse.ArgumentParser(description="CIAH reproduction evaluation")
+    parser = argparse.ArgumentParser(description="CIAH 复现实验评估脚本")
     parser.add_argument("--root", type=str, default="data/PatternNet")
     parser.add_argument("--imb_factor", type=float, default=0.01)
     parser.add_argument("--hash_bits", type=int, default=32)
-    parser.add_argument("--weights", type=str, default="model_plain_PatternNet.pth")
+    parser.add_argument("--weights", type=str, default="model_none_PatternNet.pth")
     parser.add_argument("--weights_template", type=str, default="model_bits{bits}_if{imb_factor}.pth")
     parser.add_argument("--batch_size", type=int, default=64)
     parser.add_argument("--query_ratio", type=float, default=0.2)
@@ -36,6 +39,7 @@ def parse_args():
 
 
 def set_seed(seed: int):
+    # 固定随机种子，保证结果可复现。
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -66,7 +70,7 @@ def maybe_save_tsne(path: str, codes: np.ndarray, labels: np.ndarray, max_points
     try:
         from sklearn.manifold import TSNE
     except ImportError:
-        print("Skip t-SNE: scikit-learn is not installed.")
+        print("跳过 t-SNE：未安装 scikit-learn。")
         return
 
     if len(codes) == 0:
@@ -110,13 +114,14 @@ def evaluate_once(
     num_workers: int,
 ):
     if not os.path.isfile(weights_path):
-        print(f"Skip: weights not found -> {weights_path}")
+        print(f"跳过：未找到权重 -> {weights_path}")
         return
 
     transform = transforms.Compose(
         [
             transforms.Resize((224, 224)),
             transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ]
     )
 
@@ -197,12 +202,12 @@ def evaluate_once(
     suffix = f"_{tag}" if tag else ""
     pr_path = f"pr_curve_bits{hash_bits_from_ckpt}_if{imb_factor}{suffix}.csv"
     save_pr_curve_csv(pr_path, result["pr_curve"])
-    print(f"Saved PR curve to {pr_path}")
+    print(f"PR 曲线已保存到: {pr_path}")
 
     if tsne:
         tsne_path = f"tsne_bits{hash_bits_from_ckpt}_if{imb_factor}{suffix}.csv"
         maybe_save_tsne(tsne_path, query_codes, query_labels, tsne_max, seed)
-        print(f"Saved t-SNE to {tsne_path}")
+        print(f"t-SNE 结果已保存到: {tsne_path}")
 
 
 def main():
@@ -210,7 +215,7 @@ def main():
     set_seed(args.seed)
 
     if not os.path.isdir(args.root):
-        raise FileNotFoundError(f"Dataset root does not exist: {args.root}")
+        raise FileNotFoundError(f"数据集根目录不存在: {args.root}")
 
     device = choose_device(args.device)
 
