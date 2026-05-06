@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95793ff-b27b-4b66-923a-cce86644ce7a" name="更改" comment="" />
+    <list default="true" id="f95793ff-b27b-4b66-923a-cce86644ce7a" name="更改" comment="Update training and evaluation scripts with Chinese descriptions and improved parameter settings">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/patternnet_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/patternnet_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_none_NWPU-RESISC45.pth" beforeDir="false" afterPath="$PROJECT_DIR$/测试模型组/model_none_NWPU-RESISC45.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_none_PatternNet.pth" beforeDir="false" afterPath="$PROJECT_DIR$/测试模型组/model_none_PatternNet.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_none_RSSCN7.pth" beforeDir="false" afterPath="$PROJECT_DIR$/测试模型组/model_none_RSSCN7.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hash_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hash_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr_curve_bits32_if0.01_model_none_NWPU-RESISC45.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr_curve_bits32_if0.01_model_none_PatternNet.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr_curve_bits32_if0.01_model_none_RSSCN7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_test.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/run_test.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_CLRS.json" beforeDir="false" afterPath="$PROJECT_DIR$/split_CLRS.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_NWPU-RESISC45.json" beforeDir="false" afterPath="$PROJECT_DIR$/split_NWPU-RESISC45.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_RSSCN7.json" beforeDir="false" afterPath="$PROJECT_DIR$/split_RSSCN7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/split_patternnet.json" beforeDir="false" afterPath="$PROJECT_DIR$/split_patternnet.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_all_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_all_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/centripetal_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/centripetal_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/iam_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/iam_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/longtail_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/longtail_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/retrieval.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/retrieval.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +38,28 @@
   <component name="CopilotPersistence">
     <persistenceIdMap>
       <entry key="_C:/Users/79913/Desktop/sth/study/毕设/代码/真复现" value="3CZshadLAXELtFsGHscJOvRLRlU" />
+      <entry key="_C:/Users/79913/Desktop/sth/毕设/代码/真复现" value="3CkADH06HrXY5VepNU64Qodsot4" />
     </persistenceIdMap>
   </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="agent-panel" value="GPT-5.3-Codex" />
+      <entry key="chat-panel" value="GPT-5.3-Codex" />
+    </selectedModels>
+  </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="79727" />
+    <option name="cachedIndexableFilesCount" value="79923" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -31,17 +74,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;PowerShell.run_test.ps1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_all_datasets.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "PowerShell.run_clrs_3cases_train_test.ps1.executor": "Run",
+    "PowerShell.run_clrs_3cases_train_test_beta099.ps1.executor": "Run",
+    "PowerShell.run_clrs_if0.05_bits32_cb1_beta_sweep.ps1.executor": "Run",
+    "PowerShell.run_clrs_if0.05_bits32_cb_1.ps1.executor": "Run",
+    "PowerShell.run_clrs_if0.05_bits32_cb_1beta.ps1.executor": "Run",
+    "PowerShell.run_clrs_if0.05_bits32_none.ps1.executor": "Run",
+    "PowerShell.run_clrs_quickcheck.ps1.executor": "Run",
+    "PowerShell.run_nwpu_3cases_train_test.ps1.executor": "Run",
+    "PowerShell.run_test.ps1.executor": "Run",
+    "PowerShell.run_three_datasets_beta_sweep.ps1.executor": "Run",
+    "PowerShell.run_train_cb.ps1.executor": "Run",
+    "PowerShell.run_train_cb_improved.ps1.executor": "Run",
+    "PowerShell.run_train_plain.ps1.executor": "Run",
+    "Python.app_clrs_retrieval.executor": "Run",
+    "Python.plot_retrieval_curves.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.train.executor": "Run",
+    "Python.train_all_datasets.executor": "Run",
+    "Python.train_test_cb1_grid.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "爆炸版",
+    "last_opened_file_path": "C:/Users/79913/Desktop/sth/毕设/代码/真复现",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\79913\Desktop\sth\毕设\代码\真复现\测试模型组" />
+      <recent name="C:\Users\79913\Desktop\sth\毕设\代码\真复现" />
+      <recent name="C:\Users\79913\Desktop\sth\study\毕设\代码\真复现\models" />
+      <recent name="C:\Users\79913\Desktop\sth\study\毕设\代码\真复现" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,7 +129,20 @@
       <option name="presentableId" value="Default" />
       <updated>1776604547495</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update training and evaluation scripts with Chinese descriptions and improved parameter settings">
+      <option name="closed" value="true" />
+      <created>1776753969716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776753969716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update training and evaluation scripts with Chinese descriptions and improved parameter settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update training and evaluation scripts with Chinese descriptions and improved parameter settings" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
