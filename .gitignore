@@ -1,2 +1,32 @@
-# Ignore local dataset files
+# 数据集文件
 data/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 模型权重文件
+*.pth
+测试模型组/
+
+# IDE 配置
+.idea/
+.vscode/
+
+# Claude Code 配置
+.claude/
+.planning/
+
+# 生成的图表和日志
+plots/
+plots_test/
+logs_*/
+*.csv
+
+# 临时文件
+.tmp_uploads/
+test_images/
+
+# 论文和文档
+*.pdf
+*.docx

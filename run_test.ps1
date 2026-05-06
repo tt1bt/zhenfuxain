@@ -1,11 +1,12 @@
-param(
+                                                                 param(
     [switch]$All,
     [switch]$DryRun,
     [string]$DataRoot = "data",
     [string]$WeightsDir = ".",
-    [string]$PythonExe = "python",
+    [string]$PythonExe = "D:\app\Anaconda\envs\DL\python.exe",
     [double]$ImbFactor = 0.01,
     [int]$HashBits = 32,
+    [bool]$InferSettingsFromWeight = $true,
     [int]$BatchSize = 64,
     [double]$QueryRatio = 0.2,
     [string]$Device = "auto",
@@ -17,6 +18,21 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+
+if ([System.IO.Path]::IsPathRooted($PythonExe)) {
+    if (-not (Test-Path $PythonExe)) {
+        throw "Python executable not found: $PythonExe"
+    }
+    $ResolvedPythonExe = $PythonExe
+} else {
+    $cmd = Get-Command $PythonExe -ErrorAction SilentlyContinue
+    if (-not $cmd) {
+        throw "Cannot resolve Python executable '$PythonExe'. Please pass -PythonExe with an absolute path."
+    }
+    $ResolvedPythonExe = $cmd.Source
+}
+
+Write-Host "[ENV ] Python: $ResolvedPythonExe"
 
 function Get-DatasetFolders {
     param([string]$Root)
@@ -48,6 +64,28 @@ function Resolve-DatasetFromWeight {
         }
     }
 
+    return $null
+}
+
+function Resolve-ImbFromWeight {
+    param([string]$WeightPath)
+
+    $stem = [System.IO.Path]::GetFileNameWithoutExtension($WeightPath)
+    $m = [regex]::Match($stem, "_if([0-9]+(?:\.[0-9]+)?)")
+    if ($m.Success) {
+        return [double]$m.Groups[1].Value
+    }
+    return $null
+}
+
+function Resolve-BitsFromWeight {
+    param([string]$WeightPath)
+
+    $stem = [System.IO.Path]::GetFileNameWithoutExtension($WeightPath)
+    $m = [regex]::Match($stem, "bits([0-9]+)")
+    if ($m.Success) {
+        return [int]$m.Groups[1].Value
+    }
     return $null
 }
 
@@ -143,11 +181,25 @@ foreach ($w in $weightFiles) {
     $splitPath = "split_${dataset}.json"
     $outTag = [System.IO.Path]::GetFileNameWithoutExtension($w)
 
+    $evalImb = $ImbFactor
+    $evalBits = $HashBits
+    if ($InferSettingsFromWeight) {
+        $imbFromWeight = Resolve-ImbFromWeight -WeightPath $w
+        $bitsFromWeight = Resolve-BitsFromWeight -WeightPath $w
+
+        if ($imbFromWeight -ne $null) {
+            $evalImb = [double]$imbFromWeight
+        }
+        if ($bitsFromWeight -ne $null) {
+            $evalBits = [int]$bitsFromWeight
+        }
+    }
+
     $cmd = Build-TestCommand `
-        -Python $PythonExe `
+        -Python $ResolvedPythonExe `
         -DatasetRoot $datasetRoot `
-        -Imb $ImbFactor `
-        -Bits $HashBits `
+        -Imb $evalImb `
+        -Bits $evalBits `
         -Weight $w `
         -Bz $BatchSize `
         -QueryRatioArg $QueryRatio `
@@ -162,6 +214,7 @@ foreach ($w in $weightFiles) {
     Write-Host ("=" * 80)
     Write-Host "[RUN ] Dataset: $dataset"
     Write-Host "[RUN ] Weights: $w"
+    Write-Host "[RUN ] Eval settings: imb_factor=$evalImb, hash_bits=$evalBits"
     Write-Host "[CMD ] $($cmd -join ' ')"
 
     if ($DryRun) {
