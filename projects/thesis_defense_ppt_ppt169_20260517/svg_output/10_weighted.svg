@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">03</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">加权改进方案</text>
+  <line x1="80" y1="95" x2="400" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="540" height="250" rx="12" fill="#1A5F7A"/>
+  <text x="120" y="180" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">核心思想</text>
+  <text x="120" y="230" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" opacity="0.9">基于有效样本数的类别加权</text>
+  <text x="120" y="270" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">对不同类别采用不同优化权重</text>
+  <text x="120" y="310" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">重点提升尾部类别训练强度</text>
+  <rect x="660" y="130" width="540" height="250" rx="12" fill="#F5F7FA"/>
+  <text x="700" y="180" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">有效样本数公式</text>
+  <text x="700" y="230" fill="#1A5F7A" font-family="Consolas, monospace" font-size="24">E_n = (1 - β^n) / (1 - β)</text>
+  <text x="700" y="280" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">n: 类别样本数量</text>
+  <text x="700" y="310" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">β: 超参数 (0 &lt; β &lt; 1)</text>
+  <rect x="80" y="410" width="1120" height="180" rx="12" fill="#3498DB" opacity="0.1"/>
+  <text x="120" y="460" fill="#3498DB" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">加权向心损失</text>
+  <text x="120" y="510" fill="#2C3E50" font-family="Consolas, monospace" font-size="18">L_weighted = Σ w_k × L_centripetal(x_k)</text>
+  <text x="120" y="550" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">w_k = (1 - β) / (1 - β^n_k)  权重与有效样本数成反比</text>
+  <text x="640" y="510" fill="#2C3E50" font-family="Consolas, monospace" font-size="18">w_k ∝ 1 / E_n</text>
+  <text x="640" y="550" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">尾部类别样本数少 → 有效样本数小 → 权重高</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 10 / 16 —</text>
+</svg>

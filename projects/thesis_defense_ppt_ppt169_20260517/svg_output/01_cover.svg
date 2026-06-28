@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0E6ED"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradient)"/>
+  <rect x="0" y="0" width="1280" height="720" fill="#1A5F7A" opacity="0.85"/>
+  <circle cx="1150" cy="100" r="300" fill="#3498DB" opacity="0.15"/>
+  <circle cx="100" cy="650" r="200" fill="#2ECC71" opacity="0.1"/>
+  <text x="640" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="bold">面向长尾遥感图像检索的加权哈希学习算法研究</text>
+  <text x="640" y="340" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" opacity="0.9">Weighted Hashing Learning for Long-Tailed Remote Sensing Image Retrieval</text>
+  <line x1="340" y1="380" x2="940" y2="380" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+  <text x="640" y="430" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24">毕业论文答辩</text>
+  <text x="640" y="520" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" opacity="0.8">答辩人：[姓名]</text>
+  <text x="640" y="555" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" opacity="0.8">指导教师：[导师]</text>
+  <text x="640" y="620" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" opacity="0.6">[学院] / [专业]</text>
+  <text x="640" y="655" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.5">2026年5月</text>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">04</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">实验结果分析</text>
+  <line x1="80" y1="95" x2="400" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="540" height="280" rx="12" fill="#F5F7FA"/>
+  <text x="120" y="175" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">整体性能对比</text>
+  <text x="120" y="215" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">加权方法 vs 原始向心式哈希</text>
+  <rect x="120" y="240" width="480" height="30" rx="4" fill="#E0E6ED"/>
+  <rect x="120" y="240" width="300" height="30" rx="4" fill="#3498DB"/>
+  <text x="270" y="260" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">原始方法</text>
+  <rect x="120" y="280" width="480" height="30" rx="4" fill="#E0E6ED"/>
+  <rect x="120" y="280" width="380" height="30" rx="4" fill="#2ECC71"/>
+  <text x="350" y="300" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">加权方法 (+15%)</text>
+  <text x="120" y="360" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">mAP提升: PatternNet 8.2%, NWPU 12.5%</text>
+  <rect x="660" y="130" width="540" height="280" rx="12" fill="#1A5F7A" opacity="0.1"/>
+  <text x="700" y="175" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">类别段分析</text>
+  <text x="700" y="220" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">头部类别: +3.2%</text>
+  <rect x="700" y="240" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="700" y="240" width="380" height="20" rx="4" fill="#1A5F7A"/>
+  <text x="700" y="290" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">中部类别: +9.7%</text>
+  <rect x="700" y="310" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="700" y="310" width="420" height="20" rx="4" fill="#3498DB"/>
+  <text x="700" y="360" fill="#2ECC71" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">尾部类别: +18.3%</text>
+  <rect x="700" y="380" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="700" y="380" width="480" height="20" rx="4" fill="#2ECC71"/>
+  <rect x="80" y="440" width="1120" height="160" rx="12" fill="#F5F7FA"/>
+  <text x="120" y="485" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">参数敏感性分析</text>
+  <text x="120" y="530" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">β参数: 控制有效样本数的衰减速度</text>
+  <text x="120" y="565" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">α参数: 控制分类损失与哈希损失的权重平衡</text>
+  <text x="700" y="530" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">最优配置: β=0.9999, α=0.05</text>
+  <text x="700" y="565" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">16/32/64 bits哈希码均取得显著提升</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 13 / 16 —</text>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="8" fill="url(#accentGrad)"/>
+  <text x="80" y="80" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="36" font-weight="bold">目录</text>
+  <text x="80" y="115" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">CONTENTS</text>
+  <line x1="80" y1="140" x2="1200" y2="140" stroke="#E0E6ED" stroke-width="1"/>
+  <circle cx="120" cy="210" r="28" fill="#1A5F7A"/>
+  <text x="120" y="217" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">01</text>
+  <text x="170" y="205" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">研究背景与意义</text>
+  <text x="170" y="230" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Research Background and Significance</text>
+  <circle cx="120" cy="300" r="28" fill="#1A5F7A"/>
+  <text x="120" y="307" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">02</text>
+  <text x="170" y="295" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">国内外研究现状</text>
+  <text x="170" y="320" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Literature Review</text>
+  <circle cx="120" cy="390" r="28" fill="#1A5F7A"/>
+  <text x="120" y="397" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">03</text>
+  <text x="170" y="385" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">研究方法与创新点</text>
+  <text x="170" y="410" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Methodology and Innovations</text>
+  <circle cx="120" cy="480" r="28" fill="#1A5F7A"/>
+  <text x="120" y="487" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">04</text>
+  <text x="170" y="475" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">实验设计与结果分析</text>
+  <text x="170" y="500" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Experiments and Results</text>
+  <circle cx="680" cy="210" r="28" fill="#3498DB"/>
+  <text x="680" y="217" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">05</text>
+  <text x="730" y="205" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">结论与展望</text>
+  <text x="730" y="230" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Conclusions and Future Work</text>
+  <circle cx="680" cy="300" r="28" fill="#3498DB"/>
+  <text x="680" y="307" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">06</text>
+  <text x="730" y="295" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">致谢</text>
+  <text x="730" y="320" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Acknowledgements</text>
+  <line x1="80" y1="560" x2="1200" y2="560" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="680" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 1 / 16 —</text>
+</svg>

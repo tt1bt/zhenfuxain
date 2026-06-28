@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="url(#bgGradient)"/>
+  <rect x="0" y="0" width="1280" height="720" fill="#1A5F7A" opacity="0.85"/>
+  <circle cx="1100" cy="150" r="250" fill="#3498DB" opacity="0.15"/>
+  <circle cx="150" cy="600" r="180" fill="#2ECC71" opacity="0.1"/>
+  <text x="640" y="250" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="56" font-weight="bold">感谢聆听</text>
+  <text x="640" y="310" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" opacity="0.9">THANK YOU</text>
+  <line x1="440" y1="350" x2="840" y2="350" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="640" y="420" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" opacity="0.9">恳请各位老师批评指正</text>
+  <rect x="390" y="480" width="500" height="120" rx="12" fill="#FFFFFF" opacity="0.1"/>
+  <text x="640" y="530" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">感谢导师的悉心指导</text>
+  <text x="640" y="565" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">感谢实验室同学的帮助</text>
+  <text x="640" y="600" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">感谢家人的支持</text>
+  <text x="640" y="680" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.5">— 16 / 16 —</text>
+</svg>

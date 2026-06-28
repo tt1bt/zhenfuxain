@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">04</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">消融实验分析</text>
+  <line x1="80" y1="95" x2="450" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="1120" height="120" rx="12" fill="#F5F7FA"/>
+  <text x="120" y="170" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">不同加权策略对比</text>
+  <rect x="120" y="195" width="200" height="40" rx="8" fill="#E0E6ED"/>
+  <text x="220" y="222" text-anchor="middle" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">无加权 (baseline)</text>
+  <rect x="340" y="195" width="200" height="40" rx="8" fill="#95A5A6"/>
+  <text x="440" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">样本数倒数加权</text>
+  <rect x="560" y="195" width="200" height="40" rx="8" fill="#3498DB"/>
+  <text x="660" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">有效样本数加权</text>
+  <rect x="780" y="195" width="200" height="40" rx="8" fill="#2ECC71"/>
+  <text x="880" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">渐进式有效样本加权</text>
+  <rect x="80" y="280" width="540" height="200" rx="12" fill="#1A5F7A" opacity="0.1"/>
+  <text x="120" y="320" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">损失函数各部分贡献</text>
+  <text x="120" y="365" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">向心损失: +6.2%</text>
+  <rect x="120" y="385" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="120" y="385" width="280" height="20" rx="4" fill="#1A5F7A"/>
+  <text x="120" y="430" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">分类损失: +3.1%</text>
+  <rect x="120" y="450" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="120" y="450" width="180" height="20" rx="4" fill="#3498DB"/>
+  <text x="120" y="495" fill="#2ECC71" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">加权机制: +8.5%</text>
+  <rect x="120" y="515" width="400" height="20" rx="4" fill="#E0E6ED"/>
+  <rect x="120" y="515" width="350" height="20" rx="4" fill="#2ECC71"/>
+  <rect x="660" y="280" width="540" height="200" rx="12" fill="#3498DB" opacity="0.1"/>
+  <text x="700" y="320" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">不同数据集泛化性能</text>
+  <text x="700" y="365" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">PatternNet: +8.2%</text>
+  <text x="700" y="400" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">NWPU-RESISC45: +12.5%</text>
+  <text x="700" y="435" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">RSSCN7: +10.8%</text>
+  <text x="700" y="470" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">CLRS: +15.3%</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 14 / 16 —</text>
+</svg>

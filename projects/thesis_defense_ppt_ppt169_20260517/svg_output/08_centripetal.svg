@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">02</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">国内外研究现状 - 向心式哈希学习</text>
+  <line x1="80" y1="95" x2="700" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="540" height="400" rx="12" fill="#F5F7FA"/>
+  <text x="120" y="190" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">核心思想</text>
+  <text x="120" y="230" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">引入类别中心概念</text>
+  <text x="120" y="265" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">推动样本向类别中心聚集</text>
+  <text x="120" y="320" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">方法优势</text>
+  <text x="120" y="360" fill="#2ECC71" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">✓ 训练稳定</text>
+  <text x="120" y="400" fill="#2ECC71" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">✓ 结构简洁</text>
+  <text x="120" y="440" fill="#2ECC71" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">✓ 优化稳定</text>
+  <text x="120" y="490" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">存在问题</text>
+  <text x="120" y="530" fill="#E74C3C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">✗ 未考虑类别样本规模差异</text>
+  <text x="120" y="560" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">统一建模方式，尾部类别优化不足</text>
+  <rect x="660" y="130" width="540" height="400" rx="12" fill="#1A5F7A" opacity="0.1"/>
+  <text x="700" y="200" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">向心式哈希示意</text>
+  <circle cx="830" cy="320" r="30" fill="#3498DB"/>
+  <text x="830" y="327" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">C</text>
+  <circle cx="750" cy="250" r="12" fill="#1A5F7A"/>
+  <circle cx="780" cy="280" r="12" fill="#1A5F7A"/>
+  <circle cx="870" cy="260" r="12" fill="#1A5F7A"/>
+  <circle cx="900" cy="300" r="12" fill="#1A5F7A"/>
+  <circle cx="850" cy="350" r="12" fill="#1A5F7A"/>
+  <line x1="750" y1="250" x2="830" y2="320" stroke="#3498DB" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="780" y1="280" x2="830" y2="320" stroke="#3498DB" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="870" y1="260" x2="830" y2="320" stroke="#3498DB" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="900" y1="300" x2="830" y2="320" stroke="#3498DB" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="850" y1="350" x2="830" y2="320" stroke="#3498DB" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="930" y="380" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">C = 类别中心</text>
+  <text x="750" y="420" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">样本向中心聚集</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 8 / 16 —</text>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">02</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">国内外研究现状 - 深度哈希学习</text>
+  <line x1="80" y1="95" x2="600" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="360" height="380" rx="12" fill="#F5F7FA"/>
+  <rect x="80" y="130" width="360" height="60" rx="12" fill="#1A5F7A"/>
+  <rect x="80" y="170" width="360" height="20" fill="#1A5F7A"/>
+  <text x="260" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">监督哈希方法</text>
+  <text x="120" y="230" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• SH (Supervision Hashing)</text>
+  <text x="120" y="265" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">成对监督信息</text>
+  <text x="120" y="310" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• DSH (Deep Supervised Hash)</text>
+  <text x="120" y="345" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">深度监督</text>
+  <text x="120" y="390" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• CNNH</text>
+  <text x="120" y="425" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">卷积神经网络哈希</text>
+  <rect x="460" y="130" width="360" height="380" rx="12" fill="#F5F7FA"/>
+  <rect x="460" y="130" width="360" height="60" rx="12" fill="#3498DB"/>
+  <rect x="460" y="170" width="360" height="20" fill="#3498DB"/>
+  <text x="640" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">无监督哈希方法</text>
+  <text x="500" y="230" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• ITQ (Iterative Quantization)</text>
+  <text x="500" y="265" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">迭代量化</text>
+  <text x="500" y="310" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• SDH (Sparse Discrete Hash)</text>
+  <text x="500" y="345" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">稀疏离散哈希</text>
+  <text x="500" y="390" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• 基于重构的方法</text>
+  <text x="500" y="425" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">矩阵分解</text>
+  <rect x="840" y="130" width="360" height="380" rx="12" fill="#F5F7FA"/>
+  <rect x="840" y="130" width="360" height="60" rx="12" fill="#2ECC71"/>
+  <rect x="840" y="170" width="360" height="20" fill="#2ECC71"/>
+  <text x="1020" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">半监督哈希方法</text>
+  <text x="880" y="230" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• 混合标签与无标签数据</text>
+  <text x="880" y="265" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">利用部分标注信息</text>
+  <text x="880" y="310" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• 主动学习的哈希方法</text>
+  <text x="880" y="345" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">迭代标注</text>
+  <text x="880" y="390" fill="#2C3E50" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">• 不平衡数据处理</text>
+  <text x="880" y="425" fill="#7F8C8D" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">类别权重调整</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 6 / 16 —</text>
+</svg>

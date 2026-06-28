@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">02</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">国内外研究现状 - 长尾学习</text>
+  <line x1="80" y1="95" x2="600" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="130" width="360" height="380" rx="12" fill="#1A5F7A"/>
+  <text x="260" y="200" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">数据层面</text>
+  <line x1="160" y1="230" x2="360" y2="230" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="260" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">重采样策略</text>
+  <text x="260" y="320" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">过采样尾部 / 欠采样头部</text>
+  <text x="260" y="370" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">数据增强</text>
+  <text x="260" y="410" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">MixUp / CutMix / AutoAugment</text>
+  <rect x="460" y="130" width="360" height="380" rx="12" fill="#3498DB"/>
+  <text x="640" y="200" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">特征层面</text>
+  <line x1="540" y1="230" x2="740" y2="230" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="640" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">迁移学习</text>
+  <text x="640" y="320" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">从头部到尾部的知识迁移</text>
+  <text x="640" y="370" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">元学习</text>
+  <text x="640" y="410" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">学会如何学习</text>
+  <rect x="840" y="130" width="360" height="380" rx="12" fill="#2ECC71"/>
+  <text x="1020" y="200" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">损失层面</text>
+  <line x1="920" y1="230" x2="1120" y2="230" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="1020" y="280" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">类别加权</text>
+  <text x="1020" y="320" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">基于样本数的权重调整</text>
+  <text x="1020" y="370" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">均衡损失</text>
+  <text x="1020" y="410" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.8">Class-Balanced Loss (CVPR 2019)</text>
+  <line x1="80" y1="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 7 / 16 —</text>
+</svg>

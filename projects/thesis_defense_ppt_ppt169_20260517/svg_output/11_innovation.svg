@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#2980B9"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498DB"/>
+      <stop offset="100%" stop-color="#2980B9"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2ECC71"/>
+      <stop offset="100%" stop-color="#27AE60"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">03</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">创新点</text>
+  <line x1="80" y1="95" x2="250" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="80" y="150" width="360" height="400" rx="16" fill="url(#cardGrad1)"/>
+  <circle cx="200" cy="230" r="40" fill="#FFFFFF" opacity="0.2"/>
+  <text x="200" y="240" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold">1</text>
+  <text x="140" y="320" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">思想创新</text>
+  <text x="140" y="370" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">将类别均衡思想</text>
+  <text x="140" y="400" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">引入向心式哈希学习</text>
+  <text x="140" y="500" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" opacity="0.7" text-anchor="middle">解决长尾分布问题</text>
+  <rect x="460" y="150" width="360" height="400" rx="16" fill="url(#cardGrad2)"/>
+  <circle cx="580" cy="230" r="40" fill="#FFFFFF" opacity="0.2"/>
+  <text x="580" y="240" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold">2</text>
+  <text x="520" y="320" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">方法创新</text>
+  <text x="520" y="370" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">从损失函数层面</text>
+  <text x="520" y="400" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">解决长尾问题</text>
+  <text x="520" y="500" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" opacity="0.7" text-anchor="middle">保持模型简洁性</text>
+  <rect x="840" y="150" width="360" height="400" rx="16" fill="url(#cardGrad3)"/>
+  <circle cx="960" cy="230" r="40" fill="#FFFFFF" opacity="0.2"/>
+  <text x="960" y="240" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold">3</text>
+  <text x="900" y="320" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle">性能提升</text>
+  <text x="900" y="370" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">提升尾部类别</text>
+  <text x="900" y="400" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" opacity="0.9" text-anchor="middle">检索性能</text>
+  <text x="900" y="500" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" opacity="0.7" text-anchor="middle">哈希表示质量改善</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 11 / 16 —</text>
+</svg>

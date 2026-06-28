@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#3498DB"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A5F7A"/>
+      <stop offset="100%" stop-color="#2980B9"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="8" height="720" fill="url(#accentGrad)"/>
+  <text x="80" y="50" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">01</text>
+  <text x="80" y="70" fill="#1A5F7A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">研究意义</text>
+  <line x1="80" y1="95" x2="400" y2="95" stroke="#E0E6ED" stroke-width="1"/>
+  <rect x="180" y="160" width="920" height="420" rx="16" fill="url(#cardGrad)"/>
+  <text x="640" y="250" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">提升长尾遥感图像检索性能</text>
+  <line x1="440" y1="280" x2="840" y2="280" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  <text x="640" y="330" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" opacity="0.9">为实际应用提供更有效的检索方案</text>
+  <text x="640" y="370" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" opacity="0.9">推动哈希学习在不平衡数据上的研究</text>
+  <rect x="280" y="420" width="280" height="100" rx="8" fill="#FFFFFF" opacity="0.15"/>
+  <text x="420" y="465" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">理论价值</text>
+  <rect x="700" y="420" width="280" height="100" rx="8" fill="#FFFFFF" opacity="0.15"/>
+  <text x="840" y="465" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">应用价值</text>
+  <line x1="80" y="680" x2="1200" y2="680" stroke="#E0E6ED" stroke-width="1"/>
+  <text x="640" y="695" text-anchor="middle" fill="#95A5A6" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">— 5 / 16 —</text>
+</svg>
